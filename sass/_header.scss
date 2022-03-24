@@ -1,0 +1,15 @@
+@use "vars";
+
+nav#mainnav {
+  background-color: royalblue;
+  ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+  }
+  li {
+    a {
+      color: vars.$brandColor;
+    }
+  }
+}

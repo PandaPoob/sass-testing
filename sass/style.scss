@@ -1,0 +1,21 @@
+@use "header";
+@use "vars";
+@use "mixins";
+
+body {
+  background-color: vars.$brandColor;
+  font-size: vars.$fontSize;
+}
+
+a {
+  @include mixins.borders(lightblue);
+  @include mixins.bp-large {
+    padding: 3rem;
+  }
+  @include mixins.bp-small {
+    background-color: yellow;
+  }
+  &:hover {
+    background: purple;
+  }
+}
